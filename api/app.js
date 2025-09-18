@@ -14,13 +14,18 @@ const app = express();
 // ✅ CORS Configuration
 app.use(
   cors({
-    origin: "http://localhost:5173", // no trailing slash
+    // origin: "http://localhost:5173", 
+    origin: "*",
     credentials: true,
   })
 );
 
 app.use(express.json());
 app.use(cookieParser());
+
+app.get("/", (req, res) => {
+  return res.json({ success: "success" });
+});
 
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/users", userRouter);
