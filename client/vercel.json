@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://dream-nest-blush.vercel.app/api/$1"
+    }
+  ]
+}
