@@ -39,7 +39,7 @@ app.use("/api/v1/messages", messageRouter);
 
 // REMOVED: app.listen() is not used in Vercel Serverless Functions.
 // Vercel handles the server and port internally.
-// app.listen(3000, () => {
-//   console.log(`listening to the port 3000`);
-// });
+app.listen(3000, () => {
+  console.log(`listening to the port 3000`);
+});
 export default app;
