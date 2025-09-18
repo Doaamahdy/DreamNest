@@ -1,0 +1,24 @@
+.listPage {
+  display: flex;
+  height: 100%; // ✅ Take the full height of the viewport
+
+  .listContainer {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .wrapper {
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      overflow-y: scroll; 
+      padding-bottom: 50px;
+    }
+  }
+
+  .mapContainer {
+    flex: 2;
+    background-color: #fcf5f3;
+  }
+}
